@@ -1,58 +1,97 @@
-//
 const questions = [
   {
     question: "What is the chemical formula for water?",
     answers: [
-      { text: "H2O", correct: true },
-      { text: "CO2", correct: false },
-      { text: "O2", correct: false },
-      { text: "CH4", correct: false },
+        { text: "CO₂", correct: false },
+        { text: "O₂", correct: false },
+        { text: "H₂O", correct: true },
+        { text: "CH₄", correct: false },
     ],
   },
   {
     question: "What is the chemical symbol for sodium?",
-  answers: [
-    { text: "Na", correct: true },
-    { text: "Ni", correct: false },
-    { text: "Ne", correct: false },
-    { text: "Nb", correct: false },
-    ],
-  },
-  {
-    question: "What is the pH value of a neutral solution?",
-  answers: [
-    { text: "0", correct: false },
-    { text: "7", correct: true },
-    { text: "14", correct: false },
-    { text: "10", correct: false },
-    ],
-  },
-  {
-    question: "What is the chemical formula for methane?",
-  answers: [
-    { text: "CH4", correct: true },
-    { text: "CO2", correct: false },
-    { text: "H2O", correct: false },
-    { text: "C2H6", correct: false },
-    ],
-  },
-  {
-    question: "What is the process of conversion of a solid directly into vapor without passing through the liquid state called?",
     answers: [
-      { text: "Sublimation", correct: true },
+      { text: "Na", correct: true },
+      { text: "Ni", correct: false },
+      { text: "Ne", correct: false },
+      { text: "Nb", correct: false },
+    ],
+  },
+  {
+    question: "Solve the equation: 2x + 5 = 15",
+    answers: [
+      { text: "x = 7", correct: false },
+      { text: "x = 5", correct: true },
+      { text: "x = 6", correct: false },
+      { text: "x = 8", correct: false },
+    ],
+  },
+  {
+    question: "Find the square root of 144.",
+    answers: [
+      { text: "10", correct: false },
+      { text: "14", correct: false },
+      { text: "16", correct: false },
+      { text: "12", correct: true },
+    ],
+  },
+  {
+    question:
+      "What is the process of conversion of a solid directly into vapor without passing through the liquid state called?",
+    answers: [
       { text: "Evaporation", correct: false },
+      { text: "Sublimation", correct: true },
       { text: "Condensation", correct: false },
       { text: "Melting", correct: false },
     ],
   },
   {
-    question: "What is the chemical formula for sulfuric acid?",
-  answers: [
-    { text: "H2SO4", correct: true },
-    { text: "HCl", correct: false },
-    { text: "NaOH", correct: false },
-    { text: "CO2", correct: false },
-  ],
+    question: "What is the formula for calculating force?",
+    answers: [
+      { text: "Density x Volume", correct: false },
+      { text: "Work ÷ Time", correct: false },
+      { text: "Velocity x Time", correct: false },
+      { text: "Mass x Acceleration", correct: true },
+    ],
+  },
+  {
+    question: "In JavaScript, what does the 'DOM' stand for?",
+    answers: [
+        { text: "Data Object Module", correct: false },
+        { text: "Document Object Model", correct: true },
+        { text: "Dynamic Operation Mechanism", correct: false },
+      { text: "Document Order Management", correct: false },
+    ],
+  },
+
+  {
+    question: "What does API stand for in web development?",
+    answers: [
+      { text: "Application Programming Interface", correct: true },
+      { text: "Advanced Programming Interface", correct: false },
+      { text: "Automated Processing Interface", correct: false },
+      { text: "Application Process Integration", correct: false },
+    ],
+  },
+
+  {
+    question: "What is the capital city of Japan?",
+    answers: [
+      { text: "Seoul", correct: false },
+      { text: "Beijing", correct: false },
+      { text: "Tokyo", correct: true },
+      { text: "Bangkok", correct: false },
+    ],
+  },
+
+  {
+    question: "Which planet is known as the 'Red Planet'?",
+    answers: [
+      { text: "Venus", correct: false },
+      { text: "Mars", correct: true },
+      { text: "Jupiter", correct: false },
+      { text: "Saturn", correct: false },
+    ],
   },
 ];
 
@@ -116,8 +155,8 @@ function selectAnswer(e) {
 function showScore() {
   resetState();
   questionElement.innerHTML = `You Scored ${Score} out of ${questions.length}!`;
-  nextButton.innerHTML="Play Again";
-  nextButton.style.display="block"
+  nextButton.innerHTML = "Play Again";
+  nextButton.style.display = "block";
 }
 function handleNextButton() {
   currentQuestionIndex++;
