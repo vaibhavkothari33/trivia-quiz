@@ -10,7 +10,7 @@
 
 <h2>Questions</h2>
 
-<p>The quiz contains questions related to chemistry. You can modify the <code>questions</code> array in the JavaScript file to include different questions or topics.</p>
+<p>The quiz contains basic questions related to everyday subjects . You can modify the <code>questions</code> array in the JavaScript file to include different questions or topics.</p>
 
 <h2>Features</h2>
 
