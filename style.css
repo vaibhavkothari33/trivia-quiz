@@ -95,3 +95,9 @@ body {
         padding: 30px;
       }
 }
+.name{
+  padding-top: 30px;
+  padding-left: 80px;
+  font-weight: 600;
+  font-style: initial;
+}
